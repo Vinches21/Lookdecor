@@ -1,6 +1,12 @@
-from pages.base_page import BasePage
+from pages.forms_page import CallbackForm
 
 
-def test_form(driver):
-    bp = BasePage(driver, 'https://lookdecor.ru/')
-    bp.open()
+class TestForms:
+    def test_callback_form(self, driver):
+        cb = CallbackForm(driver, "https://lookdecor.ru/")
+        cb.open()
+        cb.filling_callback_form()
+
+
+
+
