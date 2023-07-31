@@ -1,5 +1,14 @@
 from selenium.webdriver.common.by import By
 
+class FooterLocators():
+    ABOT_THE_COMPANY = (By.CSS_SELECTOR, "div[class='nav_footer_bottom_links row col-sm-6'] \
+    div:nth-child(1) div:nth-child(1) a:nth-child(1)")
+    TEXT_COMPANY = (By.CSS_SELECTOR, "h1[class='page_heading']")
+
+
+
+
+
 
 class CallbackLocators:
     BUTTON_ORDER_A_CALL = (By.CSS_SELECTOR, "a[class='callback header_link']")
