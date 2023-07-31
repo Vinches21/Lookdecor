@@ -15,7 +15,7 @@ class BasePage():
         self.driver.get(self.url)
 
     """Методы для поиска видимого элемента или нескольких эелементов"""
-    def element_is_visiable(self, locator, timeout=20):
+    def elements_is_visible(self, locator, timeout=20):
         return wait(self.driver, timeout).until(EC.visibility_of_element_located(locator))
 
     def elements_are_visible(self, locator, timeout=20):
@@ -26,7 +26,7 @@ class BasePage():
     def elements_is_present(self, locator, timeout=20):
         return wait(self.driver, timeout).until(EC.presence_of_element_located(locator))
 
-    def elements_is_present(self, locator, timeout=20):
+    def elements_are_present(self, locator, timeout=20):
         return wait(self.driver, timeout).until(EC.presence_of_all_elements_located(locator))
 
     """Проверка на кликабельность"""
