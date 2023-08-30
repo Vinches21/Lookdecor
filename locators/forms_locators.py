@@ -19,5 +19,13 @@ class CallbackLocators:
     DEPARTAMENT_PLATE = (By.CSS_SELECTOR, "label[for='UF_CHECKBOX1']")
     BUTTON_CALL_ME_BACK = (By.CSS_SELECTOR, "button[oma-data-bind='applied']")
 
+class CooperationLocators:
+    NAME = (By.CSS_SELECTOR, "div[class='cooperate_right col-sm-4'] div[class='form-fields-wrap'] input[name='UF_NAME']")
+    EMAIL = (By.CSS_SELECTOR, "div[class='cooperate_right col-sm-4'] div[class='form-fields-wrap'] input[name='UF_EMAIL']")
+    NUMBER = (By.CSS_SELECTOR, "div[class='cooperate_right col-sm-4'] div[class='form-fields-wrap'] input[name='UF_PHONE']")
+    TEXT = (By.CSS_SELECTOR, "div[class='cooperate_right col-sm-4'] div[class='form-fields-wrap'] textarea[name='UF_TEXT']")
+    BUTTON_ME = (By.CSS_SELECTOR, "div[class='cooperate_right col-sm-4'] button[name='send_form']")
+
+
 
 
